@@ -1,6 +1,10 @@
 [!NOTE]
 # Fullstack Backend 
 
+[!Enlace del repositorio Git Hub]
+
+https://github.com/LOLV25/backend-fullstack.git
+
 Este proyecto es el **backend** de un sistema Fullstack, desarrollado con **Node.js, Express y MongoDB**.  
 Su propósito es proveer una API REST para la gestión de usuarios y autenticación, lista para integrarse con un frontend.
 
@@ -217,6 +221,3 @@ proyecto-backend/
 ![MongoDB](./Capturas_CRUD/BASE_DATOS/image.png)
 
 
-[!Enlace del repositorio Git Hub]
-
-https://github.com/LOLV25/backend-fullstack.git
