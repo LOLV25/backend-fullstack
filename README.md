@@ -97,7 +97,7 @@ http://localhost:4000/api/usuarios/<id_del_usuario>
 ## cuerpo json de ejemplo:
 {
   "nombre": "Luis actualizado",
-  "password": "lanuevaclave"
+  "password": "nuevaclave"
 }
 
 ## DELETE para eliminar usuario
