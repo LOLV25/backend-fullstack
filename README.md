@@ -106,7 +106,7 @@ http://localhost:4000/api/usuarios/<id_del_usuario>
 
 ## Login
 ## POST
-http://localhost:4000/api/auth/login
+http://localhost:4000/api/login
 
 ## cuerpo json de ejemplo:
 
@@ -134,9 +134,62 @@ endpoints principales:
 
 ---
 
+[!Important]
+## Pruebas de las rutas en capturas 👇
+
+[!NOTA]
+## 🖼️ Capturas de pruebas del CRUD, todas los endpoint estan protegidos con token
+
+[!LOGIN]
+### ✅ login exitoso que viene con token
+[![Login exitoso](../Capturas_CRUD/Post_Login/postlogin.png)](Capturas_CRUD/Post_Login/postlogin.png)
 
 
-## Estructura del proyecto
+[!POST]
+### ingresar el token en el post de usuario para crear un usuario protegido
+[![token_post_usuario](../Capturas_CRUD/Post_Usuarios/postusuarioinsertartoken.png)](Capturas_CRUD/Post_Usuarios/postusuarioinsertartoken.png)
+
+### ✅ Post exitoso 
+[![Post exitoso](../Capturas_CRUD/Post_Usuarios/postusuario.png)](Capturas_CRUD/Post_Usuarios/postusuario.png)
+
+## probar ruta incorrecta al hacer post
+[![Post exitoso](../Capturas_CRUD/Post_Usuarios/ejemplorutaincorrecta_post)](Capturas_CRUD/Post_Usuarios/ejemplorutaincorrecta_post.png)
+
+### ❌ Error por credenciales inválidas en el Post usuarios
+![Error post](./Capturas_CRUD/ejemplorutaincorrecta_post.png)
+
+
+
+[!GET TODOS LOS USUARIOS]
+### 📄 Listado de usuarios - mostrar todos los usuarios
+![GET usuarios](./Capturas_CRUD/Get_Todos_Usuarios/gettraertodoslosusuarios.png)
+
+
+
+[!GET USUARIO POR EMAIL]
+### 📄 Buscar usuario por email - usuario encontrado
+![GET usuario por email](./Capturas_CRUD/Get_Email/getbuscaremail.png)
+
+### ❌ error al buscar el usuario por email - error (usuario no existe)
+![error get usuario por email](./Capturas_CRUD/Get_Email/get_usuarioincorrecto_email.png)
+
+
+
+[!DELETE]
+### 🗑️ Eliminar usuario - éxito
+![delete usuario eliminado](./Capturas_CRUD/Delete_Id/eliminar_usuario_id.png)
+
+
+[!UPDATE USUARIO]
+### ✏️ Actualizar usuario - éxito
+![PUT usuario actualizado](./Capturas_CRUD/Update_Usuario_por_id/actualizar_id.png)
+![PUT usuario actualizado](./Capturas_CRUD/Update_Usuario_por_id/actualizar_id_2.png)
+
+
+
+
+
+[!ESTRUCTURA DEL PROYECTO]
 
 proyecto-backend/
 │
@@ -153,10 +206,8 @@ proyecto-backend/
 ├── models/
 │   └── Usuario.js          # Modelo de usuario en Mongoose
 │
-├── rutas/
-│   └── auth.routes.js      # Rutas de autenticación
-│
 ├── serverExpress.js        # Configuración principal del servidor
 ├── .env                    # Variables de entorno (ignorado en Git)
 ├── .gitignore              # Ignora node_modules y .env
 └── package.json
+

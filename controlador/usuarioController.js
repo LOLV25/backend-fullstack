@@ -12,8 +12,8 @@ import bcrypt from "bcryptjs";
  * POST /api/login
  * inikcio de sesion de usuario
  */
-import jwt from "jsonwebtoken";
 import User from "../models/Usuario.js";
+import jwt from "jsonwebtoken";
 
 export const loginUsuario = async (req, res, next) => {
   try {
@@ -31,12 +31,12 @@ export const loginUsuario = async (req, res, next) => {
     const ok = await bcrypt.compare(password, user.password);
     if (!ok) {
       res.status(401).json({ message: "Credenciales inválidas" });
-    }
+    };
 
     const token = jwt.sign(
       { sub: user._id, email: user.email, role: user.role },
       process.env.JWT_SECRET,
-      { expiresIn: "10m" }
+      { expiresIn: "1h" }
     );
 
     const { password: _, ...safeUser } = user.toObject();

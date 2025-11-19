@@ -16,8 +16,8 @@ export const loggerError = (parametro) => {
 
 
 /// Middleware para verificar token JWT
-import jwt from "jsonwebtoken";
 
+import jwt from "jsonwebtoken";
 export const verificarToken = (req, res, next) => {
   const authHeader = req.headers.authorization;
 
