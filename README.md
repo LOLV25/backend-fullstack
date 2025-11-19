@@ -221,3 +221,20 @@ proyecto-backend/
 ![MongoDB](./Capturas_CRUD/BASE_DATOS/image.png)
 
 
+[!importante]
+
+## Para probar el login lo puede hacer con este json 
+## POST = http://localhost:4000/api/login
+{
+  "email": "danig@gmail.com",
+  "password": "123456"
+}
+
+
+## ejemplo #2 
+
+{
+  "email": "jordg@gmail.com",
+  "password": "123456"
+}
+
