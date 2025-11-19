@@ -211,3 +211,7 @@ proyecto-backend/
 ├── .gitignore              # Ignora node_modules y .env
 └── package.json
 
+
+[!ESTRUCTURA DE LA BAASE DE DATOS MongoDB]
+
+![MongoDB](./Capturas_CRUD/BASE_DATOS/image.png)
